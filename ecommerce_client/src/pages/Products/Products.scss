@@ -1,0 +1,54 @@
+.products {
+    padding: 30px 50px;
+    display: flex;
+  
+    .left {
+      flex: 1;
+      position: sticky;
+      height: 100%;
+      top: 50px;
+  
+      .filterItem{
+        margin-bottom: 70px;
+  
+        h2{
+          font-weight: 400;
+          margin-bottom: 20px;
+        }
+  
+        .inputItem{
+          display: flex;
+          align-items: center;
+          justify-content: start;
+          gap : 7px;
+          margin-top: 40px;
+          margin-bottom: 10px;
+          margin-right: 20px;
+          position: relative;
+          label{
+            margin-left: 10px;
+          }
+
+          span > .icon-hero{
+            padding-top: 4px;
+            aspect-ratio: 1/1;
+            width: 20px;
+            cursor: pointer;
+          }
+
+        }
+      }
+    }
+    
+    .right {
+      flex: 3;
+  
+      .catImg{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        object-position: center;
+        margin-bottom: 50px;
+      }
+    }
+  }

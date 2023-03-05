@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Gajraj+One&family=Montserrat:wght@200;300;400;500&display=swap');
+
+
+
+.app{
+    font-family: 'Montserrat', sans-serif;
+
+    .link{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    input[type="range"] {
+        -webkit-appearance: none;
+        width: 150px;
+        position: relative;
+      
+        &:focus {
+          outline: none;
+      
+        }
+
+      }
+      
+      input[type="range"]::-webkit-slider-runnable-track {
+        background: var(--base);
+        height: 2px;
+      }
+      
+      input[type="range"]::-webkit-slider-thumb {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        border: none;
+        -webkit-appearance: none;
+        background-color: var(--trackball);
+        margin-top: -3.5px;
+        z-index: 99;
+        position: relative;
+        transition: 0.5s all ease;
+      }
+      
+      #value {
+        position: absolute;
+        top: -20px;
+        left: 50px;
+        font-size: 14px;
+        color: var(--base);
+        // transition: 0.5s all ease; //goofy
+        transition: 0.5s color ease;
+      }
+
+
+
+}
